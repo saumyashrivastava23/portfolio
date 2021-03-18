@@ -1,63 +1,144 @@
-*{
-    margin: 0px;
-    padding: 0px;
+* {
+  margin: 0px;
+  padding: 0px;
 }
-.box{ /*for background image*/
-    width: 100%;
-    height: 70vh;
-    background-image: url(/logo11.jpg);
-    background-size: 100% 100%;
-    
+.box {
+  /*for background image*/
+  width: 100%;
+  min-height: 600px;
+  background-image: url(/logo11.jpg);
+  background-size: 100% 100%;
+  color: white;
 }
-#logoimg{
-    margin:10px 10px 2px 20px;
-    height: 10vh;
-    width: auto;
+/* logo image properties */
+#logoimg {
+  margin: 10px 10px 2px 20px;
+  height: 10vh;
+  width: auto;
 }
-#logo{
-    margin: 2px 15px;
-    font-family: 'Akaya Telivigala', cursive;
-    color: orangered;
-    height: 2vh;
-
+/* para properties */
+#para {
+  font-family: "Akaya Telivigala", cursive;
+  margin: 5vw;
+  font-size: 4em;
+  color: white;
+  max-width: 500px;
 }
-#para{
- font-family: 'Akaya Telivigala', cursive;
-    margin: 15vh 20px;
-    color: white;
-    font-size: 6vh;
-    max-width: 500px;
-
+/* for changing some words in para */
+#para span {
+  color: orangered;
+  font-weight: bold;
 }
-#para span{
-    color: orangered;
-    font-weight: bold;
+.container {
+  /*footer properties*/
+  width: 100%;
+  margin: 20px 20px 20px 20px;
+  text-align: center;
 }
-.container{ /*footer properties*/
-     width: 100%;
-    margin: 20px 20px 20px 20px;
-    text-align: center;
-
+#title {
+  /*for "contact"*/
+  margin: 10px;
+  font-size: 30px;
+  font-weight: bolder;
 }
-#title{  /*for "contact"*/
-    margin: 10px;
-    font-size: 20px;
-    font-weight: bolder;
+/* space having contact img and name */
+.contact {
+  width: 200px;
+  font-size: 20px;
+  display: inline-block;
+  box-sizing: border-box;
+  margin: 15px auto;
 }
-.contact{
-    width: 200px;
-    display: inline-block;
-    box-sizing: border-box;
-    margin: 10px;
+/* for the contact links */
+.contact a {
+  text-decoration: none;
+  color: black;
 }
-.contact a{
-    text-decoration: none;
-    color:black;
+.contact a:hover {
+  /*changes text properties of the contacts links while hovering*/
+  color: red;
+  font-weight: bold;
 }
-.contact a:hover{   /*changes text properties of the contacts links*/
-    color: red;
-    font-weight: bold;
+.container img {
+  /* social media images; */
+  width: 40px;
 }
-.container img{    /* social media images; */
-    width: 20px;
+/* header of the page */
+header {
+  width: 100%;
+  display: flex;
+}
+/* nav menu */
+.navbar {
+  align-self: flex-end;
+  padding: 12px;
+  width: 500px;
+}
+/* nav menu properties */
+.navbar a {
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+  padding: 10px;
+}
+/* changes nav menu properties while hovering */
+.navbar a:hover {
+  color: orangered;
+}
+.navbar a:active {
+  color: orangered;
+  font-size: 28px;
+}
+/* "My Hobbies" text properties */
+#card {
+  text-align: center;
+  font-size: 40px;
+  margin: 50px auto 20px auto;
+  text-decoration: underline;
+}
+/* lorem boxes having flex properties */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+/* designing lorem boxes */
+.cardin {
+  display: inline-block;
+  border: solid 2px red;
+  height: auto;
+  width: 400px;
+  box-shadow: 0 8px 15px 0 rgba(0, 0, 0, 0.3);
+  margin: 1em;
+}
+/* "lorem" title properties */
+.cardin div {
+  font-size: 30px;
+  text-align: center;
+  text-decoration: underline;
+}
+/* lorem paragraph properties */
+.cardin p {
+  font-size: 20px;
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+}
+/* "Go" button properties */
+.btn {
+  display: block;
+  width: 80px;
+  font-size: 30px;
+  text-align: center;
+  margin: 0px auto 15px auto;
+  text-decoration: none;
+  background-color: orangered;
+  border-radius: 5px;
+  box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.3);
+  color: white;
+}
+/* changing button properties while hovering */
+.cardin a:hover {
+  font-weight: bolder;
+  color: white;
 }
